@@ -7,7 +7,7 @@ Created on Wed Apr 29 17:53:52 2015
 
 "Tic tac toc"
 
-
+# Fonction pour grille
 def grille():
     import matplotlib.pyplot as plt
     a=[0,3]
@@ -18,6 +18,7 @@ def grille():
 
 grille()
 
+# Fonction check gagnant
 def a_gagne(i,T):
     res=False
     for k in range(3):
@@ -31,7 +32,7 @@ def a_gagne(i,T):
         res=True
     return res
 
-
+# Definition coordonnées
 def coord(k,l):
     if (k,l)==(0,0):
         (x,y)=(0,2)
@@ -52,7 +53,8 @@ def coord(k,l):
     if (k,l)==(2,2):
         (x,y)=(2,0)
     return (x,y)
-    
+   
+# Definition pions joueur 1 
 def croix(k,l):
     import matplotlib.pyplot as plt
     (x,y)=coord(k,l)
@@ -66,6 +68,7 @@ croix(0,1)
 
 #Je n'arrrive pas à faire fonctionner la fonction croix et je ne trouve pas mon erreur#
 
+# Definition pionts joueur 2
 def rond(k,l):
     import matplotlib.pyplot as plt
     import numpy as np
@@ -75,6 +78,7 @@ def rond(k,l):
     
 rond(0,1)
 
+# Jeu final
 def tic_tac_toc():
     import numpy as np
     import matplotlib.pyplot as plt

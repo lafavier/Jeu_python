@@ -1,15 +1,14 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 Created on Fri May 01 18:03:46 2015
 
 @author: Laïta
 """
 
-
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+# Creation de la grille
 def creer_grille():
     for i in range (4):
         a=[0,3]
