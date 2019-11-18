@@ -64,7 +64,8 @@ def croix(k,l):
     plt.plot(a,b)
     plt.plot(a,d)
     
-croix(0,1)    
+croix(0,1) 
+ 
 
 #Je n'arrrive pas à faire fonctionner la fonction croix et je ne trouve pas mon erreur#
 
@@ -96,8 +97,8 @@ def tic_tac_toc():
             croix(k,l)
         if a_gagne(i,T)==True:
             print (T)
-            return'le joueur '+str(i)+' a gagne'
-    return'match nul'
+            return'le joueur '+str(i)+' a gagne : Felicitation'
+    return'match nul il faut retenter sa chance'
     
 tic_tac_toc()
 
